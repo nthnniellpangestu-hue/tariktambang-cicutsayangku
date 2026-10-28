@@ -1972,18 +1972,21 @@
                         url: "https://edu.assemblrworld.com/id/edukits/778",
                         assetId: "MAHZLU9Mx40",
                         templateId: "qr-digestive-system",
+                        qrSrc: "assets/organPencernaan.jpeg",
                     },
                     lambung: {
                         label: "AR Organ Lambung",
                         url: "https://edu.assemblrworld.com/edukits/796_11988",
                         assetId: "MAHZLUyDAe4",
                         templateId: "qr-stomach",
+                        qrSrc: "assets/lambung.jpeg",
                     },
                     usus_besar: {
                         label: "AR Organ Usus Besar",
                         url: "https://edu.assemblrworld.com/edukits/796_11985",
                         assetId: "MAHZLcdJYVw",
                         templateId: "qr-large-intestine",
+                        qrSrc: "assets/ususBesar.jpeg",
                     },
                 };
                 function makeQuestions(bank, seed) {
@@ -2190,6 +2193,7 @@
                                 }),
                             );
                         });
+                        image.src = item.qrSrc;
                         frame.append(image);
                         const note = document.createElement("p");
                         note.textContent = "Scan QR Code menggunakan HP untuk membuka media AR.";
