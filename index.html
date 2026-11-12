@@ -2085,18 +2085,21 @@
                     sistem_pencernaan: {
                         label: "AR Sistem Pencernaan Manusia",
                         url: "https://edu.assemblrworld.com/id/edukits/778",
+                        src: "/assets/organPencernaan.jpeg",
                         assetId: "MAHZLU9Mx40",
                         templateId: "qr-digestive-system",
                     },
                     lambung: {
                         label: "AR Organ Lambung",
                         url: "https://edu.assemblrworld.com/edukits/796_11988",
+                        src: "/assets/lambung.jpeg",
                         assetId: "MAHZLUyDAe4",
                         templateId: "qr-stomach",
                     },
                     usus_besar: {
                         label: "AR Organ Usus Besar",
                         url: "https://edu.assemblrworld.com/edukits/796_11985",
+                        src: "/assets/ususBesar.jpeg",
                         assetId: "MAHZLcdJYVw",
                         templateId: "qr-large-intestine",
                     },
@@ -2296,6 +2299,7 @@
                         image.dataset.templateId = item.templateId;
                         image.className = "qr canva-image";
                         image.loading = "lazy";
+                        image.src = item.src;
                         image.alt = "QR Code " + item.label;
                         image.addEventListener("error", () => {
                             frame.replaceChildren(
